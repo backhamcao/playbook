@@ -1,0 +1,6 @@
+- hosts: 192.168.122.101 
+  tasks:
+  - name: stop httpd service
+    service: name=httpd state=started
+  - name: uninstall httpd
+    yum: name=httpd state=absent

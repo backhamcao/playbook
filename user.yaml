@@ -1,0 +1,5 @@
+- hosts: all
+  remote_user: root
+  tasks:
+  - name: ping the hosts
+    user: name=test01 uid=10001
